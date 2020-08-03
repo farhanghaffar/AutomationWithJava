@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CentralparkSanitySuiteMaster" parallel="classes" thread-count="1">
+	
+	 <test name="CentralparkSanityTestMaster">
+	 	<parameter name="test_category" value="NonGS" />
+		<classes>
+
+<!-- 
+				previous sprint items
+	  		 	<class name="com.innroad.inncenter.tests.CP_CreateReservation" />
+			<class name="com.innroad.inncenter.tests.Verify_Notes_Tasks_CP_Reservation" />
+				<class name="com.innroad.inncenter.tests.Create_CP_MRB_Reservation" />
+	  		    <class name="com.innroad.inncenter.tests.Verify_CP_Payments" />
+				<class name="com.innroad.inncenter.tests.Create_CP_MRB_SplitReservation" />
+				<class name="com.innroad.inncenter.tests.Verify_CP_Card_Payments" />
+				<class name="com.innroad.inncenter.tests.Verify_AccountNotes_Reservation" />
+				<class name="com.innroad.inncenter.tests.Verify_Folio" />
+				<class name="com.innroad.inncenter.tests.VerifyCheckInCPReservationMRB" />      	    
+				<class name="com.innroad.inncenter.tests.VerifyChangeStayDetailsOptionMRB" /> 
+				<class name="com.innroad.inncenter.tests.VerifyNoShowCPReservationMRB" />
+				<class name="com.innroad.inncenter.tests.VerifyCancelCPReservationMRB" />
+				<class name="com.innroad.inncenter.tests.CreateUnitOwnerAccAndVerifyPayByAccounttInReservation" />
+				<class name="com.innroad.inncenter.tests.VerifyRoomStatusOnCheckInOut" /> 
+			    <class name="com.innroad.inncenter.tests.VerifyCancelSecondGuestOnPrimaryGuestStatusInHouse" />      	
+				<class name="com.innroad.inncenter.tests.VerifyPaymentInfoWithDifferentContactInfoAndBillingInfo" /> 
+				<class name="com.innroad.inncenter.tests.VerifyCopyReservationFunctionality" />
+				<class name="com.innroad.inncenter.tests.Create_TravelAgent_Account" />
+				<class name="com.innroad.inncenter.tests.Create_CP_Quote_MRB_Reservation" />     
+				<class name="com.innroad.inncenter.tests.Create_House_Account" />
+				<class name="com.innroad.inncenter.tests.VerifyAdvanceGroupMRBReservation" />
+	 		 	<class name="com.innroad.inncenter.tests.VerifyIncidentalOrderInStayInfoHistoryAndFolio" />      
+				<class name="com.innroad.inncenter.tests.VerifyManualOverrideRateInNewReservationTapeChart"/>
+	 			<class name="com.innroad.inncenter.tests.VerifyNewBaseRateCreation" /> 	   		   
+	           
+	          	Version Automation 0.4 May 14 Items
+	           
+          	     <class name="com.innroad.inncenter.tests.BulkCheckInCheckOutReservations" />  
+	          	 <class name="com.innroad.inncenter.tests.VerifyAddOnsInMRBReservation" />
+	          	 <class name="com.innroad.inncenter.tests.VerifyTaxesInCPReservation"/>
+	          	 <class name ="com.innroad.inncenter.tests.CreateUnassignedReservationFromTapeChart" />
+	          	 <class name ="com.innroad.inncenter.tests.VerifyCreatingQuoteBySelectingInActiveObsoleteMarketSegment" />
+	          	 <class name ="com.innroad.inncenter.tests.VerifyBlackoutRoom" />
+ 	  	 	     <class name ="com.innroad.inncenter.tests.VerifyAssociatingGuestProfileToReservationWithNotesTasks" />
+ 	  	 		 <class name="com.innroad.inncenter.tests.VerifyLayoutOfDailyFlashReport" /> 
+ 	  	 		 <class name="com.innroad.inncenter.tests.VerifyTaxesOnPackageInCPRes"/> 
+ 	  	 		 <class name="com.innroad.inncenter.tests.VerifyOverbookingOnCopyingReservation" />
+ 	  	 		 <class name="com.innroad.inncenter.tests.GenerateNetSalesReportForRoomClassAndWeekConsumed" />
+	  			 <class name="com.innroad.inncenter.tests.VerifyAbleToCreateGroupReservationWithBlueBookIcon" />
+			 	 <class name="com.innroad.inncenter.tests.VerifyAbleToCreateGroupReservationWithYellowBookIcon" />
+			 	 <class name="com.innroad.inncenter.tests.VerifyAbleToCreateGroupReservationWithRedBookIcon" />
+			     <class name="com.innroad.inncenter.tests.VerifyAbleToCreateAssignedGroupReservationFromBlueBookIconAndCheckIn" />
+			     <class name="com.innroad.inncenter.tests.CreateAReservationFromRoomingListAndVerifyCheckInButton" />    	
+	  			 <class name="com.innroad.inncenter.tests.VerifyReportsGeneratedIncludeFolioOptions" /> 
+				 <class name="com.innroad.inncenter.tests.VerifyRoomAssignmentForNoShowAndCancel" />
+				 <class name="com.innroad.inncenter.tests.CreateAssignedReservationFromTapeChartAndVerifyScheduling" />  
+				 <class name="com.innroad.inncenter.tests.VerifyHighestDepositPolicyForMRBResWithFixedAmounts" />
+   				 <class name="com.innroad.inncenter.tests.VerifyChargeRoutingRoomcharge" />
+ 			     <class name="com.innroad.inncenter.tests.VerifyHighestCheckInPolicyAmountApplied" />  
+ 			     <class name="com.innroad.inncenter.tests.VerifyDetailedReservationsListForMultiRoomReservation" /> 
+	  			 <class name="com.innroad.inncenter.tests.VerifyTaxExemptInCPReservation" />  	
+    			 <class name="com.innroad.inncenter.tests.VerifyLedgerBalanceReport" /> 
+    			 <class name="com.innroad.inncenter.tests.VerifyDepositDueInMRBAfterTaxExempt" /> 
+    			 <class name="com.innroad.inncenter.tests.TaxExemptInDepositAmountInRes" />
+    			 <class name="com.innroad.inncenter.tests.VerifyListReportUsingBasicAndAdvancedSearch" />
+    			 <class name="com.innroad.inncenter.tests.VerifyAccountBalanceCityLedgerReportWithIncludePendingItemsUnchecked" /> 
+	  			 <class name="com.innroad.inncenter.tests.VerifyCheckInButtonOfFutureDateReservation" />
+	          	 <class name ="com.innroad.inncenter.tests.VerifyCheckoutWithManualPaymentForSecondaryGuest" />
+	  			 <class name ="com.innroad.inncenter.tests.VerifyUserToPayByReservationWithCancelPaymentMethod" />
+	  			 <class name="com.innroad.inncenter.tests.VerifyEarlyCheckOutforPrimaryGuest" /> 
+	  			 <class name="com.innroad.inncenter.tests.VerifyPrimaryGuestPaySecondaryGuestChargesWhileCheckout" />  
+	  			 <class name="com.innroad.inncenter.tests.VerifyRollBackNoShowCancelInHouseDepartedStatus" /> 
+	  			 <class name="com.innroad.inncenter.tests.VerifyGenerateGuestStatementswitcherOnInCheckIn" />    
+	  			 <class name="com.innroad.inncenter.tests.VerifyRoomAssignmentForNoShowAndCancel" />  			 
+ 	  	 		
+	  			 
+ 	  	 		<class name="com.innroad.inncenter.tests.VerifyAccountFolioItemsInGuestStatementAndGuestRegistrationReport" />  	
+ 	  	 		<class name="com.innroad.inncenter.tests.VerifyPrintFunctionalityByClickingOnPrintButton" />  	
+ 				<class name="com.innroad.inncenter.tests.VerifyMailingDetailReportWithMultiRoomReservation" />
+ 				<class name="com.innroad.inncenter.tests.VerifyBulkCheckoutFlowForCheckOutAllInCaseOfMultipleFolios" />
+ 				<class name="com.innroad.inncenter.tests.VerifyUpdatedByFieldPaymentModa" />
+ 				<class name="com.innroad.inncenter.tests.GSRoomStatusTaskListVerifyReprt" />  
+ 				<class name="com.innroad.inncenter.tests.LongStayFunctionality" />
+				<class name="com.innroad.inncenter.tests.VerifyPoliciesFromGroupBlock" />
+ 				<class name="com.innroad.inncenter.tests.VerifyPoliciesForGroupReservation" />
+			    <class name="com.innroad.inncenter.tests.VerifyPoliciesForCorporateAccountReservation" /> 	
+			    <class name="com.innroad.inncenter.tests.VerifyReservationCreationWhileInitialPaymentMethodInvalid" />  
+			    <class name="com.innroad.inncenter.tests.VerifyTravelAgentLink" />  
+			    			
+	 		     <class name="com.innroad.inncenter.tests.VerifyCheckOutWithNonZeroBalance" /> 
+	 		     <class name="com.innroad.inncenter.tests.VerifyDepositRequiredAndPaymentSuccess" /> 
+	 		     <class name="com.innroad.inncenter.tests.VerifyAutoCreationTasksforReservation" /> 
+	 		     <class name="com.innroad.inncenter.tests.VerifyDocumentTemplateFieldsInEmail" /> 
+	 		     <class name="com.innroad.inncenter.tests.VerifyMRBGuestRegistrationReport" /> 
+	 		     <class name="com.innroad.inncenter.tests.VerifyAuthorizationMRBReservationCheckoutAll" />    
+                 <class name="com.innroad.inncenter.tests.VerifySettlementPopupOnSecondGuestCheckOut"/>
+	 	 		 <class name="com.innroad.inncenter.tests.VerifyDepositPolicyWithOneNightChargeForInterval" />
+	 	 		 <class name="com.innroad.inncenter.tests.VerifyDocumentTemplateFields" />
+	 	 		 
+	 	 	 -->	 
+	 		 <class name="com.innroad.inncenter.tests.RateGrid_Verification" />
+	  		
+ 			</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->

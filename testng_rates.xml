@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CentralParkSanitySuite_Rates">
+	
+	<test name="CentralParkSanityTest_Rates">
+		<parameter name="test_category" value="NonGS" />
+		<classes>
+<<<<<<< HEAD
+			<class name="com.innroad.inncenter.tests.RateV2RateGridBulkUpdateRateFunctionality" />
+						<class name="com.innroad.inncenter.tests.RateV2RateGridBulkUpdateRateUIVerification" />
+=======
+			<!-- <class name="com.innroad.inncenter.tests.VerifyNewBaseRateCreation" /> -->
+			
+>>>>>>> 0bc88fa663d47a29848d450c12e011930a069a3a
+			
+		</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->
+

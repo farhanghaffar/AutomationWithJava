@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="InnCenterRegressionSuiteGroups">
+	
+	<test name="InnCenterRegressionSuiteNonGS">
+		<parameter name="test_category" value="NonGS" />
+		<classes>
+		
+			 <class name="com.innroad.inncenter.tests.VerifyAdvanceGroupMRBReservation" /> 
+			 <class name="com.innroad.inncenter.tests.VerifyAbleToCreateGroupReservationWithBlueBookIcon" />
+			 <class name="com.innroad.inncenter.tests.VerifyAbleToCreateGroupReservationWithYellowBookIcon" />
+			 <class name="com.innroad.inncenter.tests.VerifyAbleToCreateGroupReservationWithRedBookIcon" />
+			 <class name="com.innroad.inncenter.tests.VerifyAbleToCreateAssignedGroupReservationFromBlueBookIconAndCheckIn" />
+			 <class name="com.innroad.inncenter.tests.CreateAReservationFromRoomingListAndVerifyCheckInButton" />
+			
+		</classes>
+
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->
+

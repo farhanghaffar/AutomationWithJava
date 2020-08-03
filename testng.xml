@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CentralParkSanitySuite">
+
+	<listeners>
+		<listener class-name="com.innroad.inncenter.listeners.EnvReaderListener" />
+		<listener class-name="com.innroad.inncenter.utils.RetryListenerClass" />
+		<listener class-name="com.innroad.inncenter.listeners.TestListener" />
+	</listeners>
+
+	<parameter name="env" value="https://www.google.com/" />
+	<suite-files>
+	<!--     <suite-file path="testng_create_room_class.xml" />  
+	   	<suite-file path="testng_create_season.xml" />
+		<suite-file path="testng_create_rate.xml" />
+		<suite-file path="tapechart.xml"/>  
+	    <suite-file path="sanitysuite.xml"/>
+	    --> 
+	    		<suite-file path="tapechart.xml"/>  
+	    
+	 </suite-files>
+
+
+			
+
+
+
+</suite> <!-- Suite -->

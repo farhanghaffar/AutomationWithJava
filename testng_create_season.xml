@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CentralParkSanitySuite_CreateSeason">
+	
+	<test name="CentralParkSanityTest" preserve-order="true">
+		<parameter name="test_category" value="NonGS" />
+		<classes>
+			
+			<class name="com.innroad.inncenter.tests.Create_Season" />
+ 
+		</classes>
+
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CentralParkSanitySuite">
+
+	<test name="CentralParkSanitySuitePolicies">
+		<parameter name="test_category" value="NonGS" />
+		<classes>
+			<class name="com.innroad.inncenter.tests.VerifyCheckInAuthorizePolicy" />
+			<class name="com.innroad.inncenter.tests.VerifyCheckInCapturePolicy" />
+			<class name="com.innroad.inncenter.tests.VerifyHighestCheckInPolicyForMRBRes" />
+			<class name="com.innroad.inncenter.tests.VerifyHighestCheckInPolicyAmountApplied" />
+			<class name="com.innroad.inncenter.tests.VerifyCancellationPolicyWithOneNightCharge" />
+			<class name="com.innroad.inncenter.tests.VerifyHighestCancelPolicyForMRBRes" />
+			<class name="com.innroad.inncenter.tests.VerifyHighestDepositPolicyForMRBResWithFixedAmounts" />
+			<class name="com.innroad.inncenter.tests.VerifyHighestDepositPolicyForMRBResWithNumberOfNightCharges" />
+			<class name="com.innroad.inncenter.tests.VerifyNoShowPolicyForMRBResWithFixedAmounts" />
+			<class name="com.innroad.inncenter.tests.VerifyDepositPolicyWithOneNightChargeForInterval" />
+			<class name="com.innroad.inncenter.tests.VerifyNoShowPolicyWithOneNightCharge" />
+			<class name="com.innroad.inncenter.tests.VerifyNoShowPolicyForMRBRes" />
+		</classes>
+	</test>
+</suite>

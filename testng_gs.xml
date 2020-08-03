@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="CentralparkSanitySuiteGS">
+
+	<test name="CentralparkSanityTestGS">
+		<parameter name="test_category" value="NonGS" />
+		<classes>
+
+			     <class name="com.innroad.inncenter.tests.GSTaskListVerifyDeleteUpdateTask"/> 
+				 <class name="com.innroad.inncenter.tests.GSRoomMaintenanceVerifyTapeChartAndRoomStatus"/> 
+				 <class name="com.innroad.inncenter.tests.GSVerifyRoomConditionAndBulkUpdate"/> 
+				 <class name="com.innroad.inncenter.tests.GSRoomStatusVerification"/> 
+			     <class name="com.innroad.inncenter.tests.GSRoomStatusTaskListVerifyReprt" />  
+                
+
+		</classes>
+
+
+	</test> <!-- Test -->
+
+
+</suite> <!-- Suite -->
+
